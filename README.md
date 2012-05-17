@@ -5,7 +5,8 @@ Here you can see the layout:
 
   http://dacap.com.ar/programming/keyboard-layout/
 
-Then main change is the defun & sexp movement.
+The main change is the replacement of buffer/paragraph movement with
+defun/sexp movement.
 
 ## How to enable it?
 
