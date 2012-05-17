@@ -6,7 +6,7 @@
 
 (defun ergoprog-beginning-of-block ()
   (interactive)
-  (if (beginning-of-defun-function)
+  (if (ergoprog-is-text-mode)
       (backward-paragraph)
     (beginning-of-defun)))
 
