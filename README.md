@@ -11,8 +11,7 @@ Then main change is the defun & sexp movement.
 
 First you have to initialize ErgoEmacs:
 
-    ;; ErgoEmacs
-    (load (concat modermacs-root "packages/ergoemacs-keybindings/ergoemacs-mode.el"))
+    (load "~/.emacs.d/packages/ergoemacs-keybindings/ergoemacs-mode.el")
     (ergoemacs-mode 1)
 
 Then you can enable ErgoProg adding its path to load-path and
