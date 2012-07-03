@@ -16,6 +16,12 @@
       (forward-paragraph)
     (end-of-defun)))
 
+(defun ergoprog-switch-macro-recording ()
+  (interactive)
+  (if (not defining-kbd-macro)
+      (kmacro-start-macro 0)
+    (kmacro-end-macro 1)))
+
 ;; ==================================================
 ;; Camel Case
 ;; ==================================================

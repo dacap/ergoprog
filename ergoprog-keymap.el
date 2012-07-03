@@ -38,15 +38,15 @@
 (define-key ergoemacs-keymap (kbd "M-m c") 'capitalize-word)
 (define-key ergoemacs-keymap (kbd "M-m l") 'downcase-word)
 (define-key ergoemacs-keymap (kbd "M-m u") 'upcase-word)
-(define-key ergoemacs-keymap (kbd "M-m k") 'kill-buffer)
 (define-key ergoemacs-keymap (kbd "M-m a") 'sort-lines)
 (define-key ergoemacs-keymap (kbd "M-m i") 'sort-includes)
 
 ;; Macros
-(define-key ergoemacs-keymap (kbd "C-8") 'kmacro-start-macro)        ;; Ctrl+8 = Start macro
-(define-key ergoemacs-keymap (kbd "C-9") 'kmacro-end-macro)          ;; Ctrl+9 = End macro
-(define-key ergoemacs-keymap (kbd "C-0") 'kmacro-edit-macro-repeat)  ;; Ctrl+0 = Edit macro
-(define-key ergoemacs-keymap (kbd "C-r") 'kmacro-end-and-call-macro) ;; Ctrl+R = Run macro
+(define-key ergoemacs-keymap (kbd "M-m k k") 'ergoprog-switch-macro-recording) ;; Start/end recording macro
+(define-key ergoemacs-keymap (kbd "M-m k e") 'kmacro-edit-macro)               ;; Edit macro
+(define-key ergoemacs-keymap (kbd "M-m k l") 'kmacro-end-and-call-macro)       ;; Run macro
+(define-key ergoemacs-keymap (kbd "M-m k i") 'kmacro-insert-counter)           ;; Insert counter
+(define-key ergoemacs-keymap (kbd "M-m k s") 'kmacro-set-counter)              ;; Set counter
 
 ;; Registers (M-m r)
 (define-key ergoemacs-keymap (kbd "M-m r k") 'point-to-register) ;; k = Down = Point
