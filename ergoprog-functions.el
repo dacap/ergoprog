@@ -22,6 +22,15 @@
       (kmacro-start-macro 0)
     (kmacro-end-macro 1)))
 
+(defun ergoprog-indent ()
+  (interactive)
+  (if (or (eq major-mode 'list-mode)
+          (eq major-mode 'emacs-lisp-mode))
+      (indent-pp-sexp)
+    (if (or (eq major-mode 'c++-mode))
+	(c-indent-exp)
+      (prog-indent-sexp))))
+
 ;; ==================================================
 ;; Camel Case
 ;; ==================================================
