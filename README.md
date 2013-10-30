@@ -1,7 +1,7 @@
-# ErgoProg - ErgoEmacs mod for programming
+# ergoprog - ergoemacs for programming
 
-Some modifications to ErgoEmacs keybindings for programmers.
-Here you can see the layout:
+Some modifications to ergoemacs keybindings for programmers.  Here you
+can see the layout:
 
   http://dacap.com.ar/programming/keyboard-layout/
 
@@ -10,13 +10,14 @@ defun/sexp movement.
 
 ## How to enable it?
 
-First you have to initialize ErgoEmacs:
+First you have to initialize ergoemacs-mode (an old version of
+ergoemacs minor mode created by Xah Lee & me):
 
-    (load "~/.emacs.d/packages/ergoemacs-keybindings/ergoemacs-mode.el")
+    (add-to-list 'load-path "~/.emacs.d/packages/ergoprog/ergoemacs-mode")
+    (require ergoemacs-mode)
     (ergoemacs-mode 1)
 
-Then you can enable ErgoProg adding its path to load-path and
-requiring `ergoprog` feature.
+Then you can enable ergoprog as follows:
 
     (add-to-list 'load-path "~/.emacs.d/packages/ergoprog")
     (require 'ergoprog)
