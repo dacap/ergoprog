@@ -31,6 +31,18 @@
 	(c-indent-exp)
       (prog-indent-sexp))))
 
+(defun ergoprog-beginning-of-line-and-buffer ()
+  (interactive)
+  (if (eq last-command this-command)
+      (beginning-of-buffer)
+    (beginning-of-line)))
+
+(defun ergoprog-end-of-line-and-buffer ()
+  (interactive)
+  (if (eq last-command this-command)
+      (end-of-buffer)
+    (end-of-line)))
+
 ;; ==================================================
 ;; Camel Case
 ;; ==================================================
