@@ -22,6 +22,14 @@
 (define-key ergoemacs-keymap (kbd "M-?") 'ergoprog-open-and-close-php-tag)
 (define-key ergoemacs-keymap (kbd "ESC M-?") 'ergoprog-open-and-close-php-tag-with-echo)
 
+;; Change isearch key to M-y/Y
+(define-key ergoemacs-keymap ergoemacs-isearch-forward-key nil)
+(define-key ergoemacs-keymap ergoemacs-isearch-backward-key nil)
+(setq ergoemacs-isearch-forward-key (kbd "M-y"))
+(setq ergoemacs-isearch-backward-key (kbd "M-Y"))
+(define-key ergoemacs-keymap ergoemacs-isearch-forward-key 'isearch-forward)
+(define-key ergoemacs-keymap ergoemacs-isearch-backward-key 'isearch-backward)
+
 ;; Common commands
 (define-key ergoemacs-keymap (kbd "M-b") 'iswitchb-buffer)
 (define-key ergoemacs-keymap (kbd "M-B") 'ibuffer)
