@@ -1,7 +1,8 @@
-# ergoprog - ergoemacs for programming
+# ergoprog - ergoemacs for programmers
 
-Some modifications to ergoemacs keybindings for programmers.  Here you
-can see the layout:
+Some modifications to ergoemacs keybindings for programmers.
+In the following link you can see the layout and some explanation
+how it works:
 
   http://dacap.com.ar/programming/keyboard-layout/
 
