@@ -1,10 +1,10 @@
 ;-*- coding: utf-8 -*-
 ;; ergoemacs-mode.el -- A emacs keybinding set based on ergonomics.
 
+;; Copyright © 2009, 2010, 2015 by David Capello
 ;; Copyright © 2007, 2008, 2009 by Xah Lee
-;; Copyright © 2009, 2010 by David Capello
 
-;; Author: Xah Lee ( http://xahlee.org/ ), David Capello ( http://www.davidcapello.com.ar/ )
+;; Author: Xah Lee ( http://xahlee.org/ ), David Capello ( http://www.davidcapello.com/ )
 ;; Version: 5.3.3
 ;; Keywords: qwerty, dvorak, keybinding, ergonomic, colemak
 
