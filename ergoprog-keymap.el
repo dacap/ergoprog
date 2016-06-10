@@ -61,11 +61,7 @@
 (define-key ergoemacs-keymap (kbd "M-m g") 'goto-line)
 (define-key ergoemacs-keymap (kbd "M-m o") 'ff-get-other-file)
 (define-key ergoemacs-keymap (kbd "M-m C-t") 'transpose-lines)
-(define-key ergoemacs-keymap (kbd "M-m c") 'capitalize-word)
-(define-key ergoemacs-keymap (kbd "M-m l") 'downcase-word)
-(define-key ergoemacs-keymap (kbd "M-m u") 'upcase-word)
 (define-key ergoemacs-keymap (kbd "M-m a") 'sort-lines)
-(define-key ergoemacs-keymap (kbd "M-m i") 'sort-includes)
 (define-key ergoemacs-keymap (kbd "M-m M-l") 'ergoprog-indent)
 
 ;; Macros
