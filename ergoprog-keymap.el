@@ -32,7 +32,7 @@
 (define-key ergoemacs-keymap ergoemacs-isearch-backward-key 'isearch-backward)
 
 ;; Common commands
-(define-key ergoemacs-keymap (kbd "M-b") 'iswitchb-buffer)
+(define-key ergoemacs-keymap (kbd "M-b") 'switch-to-buffer)
 (define-key ergoemacs-keymap (kbd "M-B") 'ibuffer)
 (define-key ergoemacs-keymap (kbd "M-m s") 'save-buffer)
 (define-key ergoemacs-keymap (kbd "M-m M-s") 'save-some-buffers)
