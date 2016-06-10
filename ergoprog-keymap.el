@@ -66,7 +66,7 @@
 (define-key ergoemacs-keymap (kbd "M-m u") 'upcase-word)
 (define-key ergoemacs-keymap (kbd "M-m a") 'sort-lines)
 (define-key ergoemacs-keymap (kbd "M-m i") 'sort-includes)
-(define-key ergoemacs-keymap (kbd "M-m M-i") 'ergoprog-indent)
+(define-key ergoemacs-keymap (kbd "M-m M-l") 'ergoprog-indent)
 
 ;; Macros
 (define-key ergoemacs-keymap (kbd "M-m m") 'ergoprog-switch-macro-recording) ;; Start/end recording macro
