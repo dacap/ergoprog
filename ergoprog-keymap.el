@@ -40,6 +40,7 @@
 (define-key ergoemacs-keymap (kbd "M-m M-s") 'save-some-buffers)
 (define-key ergoemacs-keymap (kbd "M-m f") 'find-file)
 (define-key ergoemacs-keymap (kbd "M-m d") 'ido-dired)
+(define-key ergoemacs-keymap (kbd "M-m M-f") 'projectile-find-file)
 (define-key ergoemacs-keymap (kbd "M-m h") 'back-to-indentation)
 (define-key ergoemacs-keymap (kbd "M-m t") 'transpose-chars)
 (define-key ergoemacs-keymap (kbd "M-m M-t") 'transpose-words)
