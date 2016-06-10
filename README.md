@@ -4,7 +4,7 @@ Some modifications to ergoemacs keybindings for programmers.
 In the following link you can see the layout and some explanation
 how it works:
 
-  http://dacap.com.ar/programming/keyboard-layout/
+  http://davidcapello.com/programming/keyboard-layout/
 
 The main change is the replacement of buffer/paragraph movement with
 defun/sexp movement.
