@@ -24,6 +24,18 @@
 (define-key ergoemacs-keymap (kbd "M-?") 'ergoprog-open-and-close-php-tag)
 (define-key ergoemacs-keymap (kbd "ESC M-?") 'ergoprog-open-and-close-php-tag-with-echo)
 
+;; Programming symbols. All this makes sense in Spanish keyboard
+;; layout because ( and ) are Shift+8 and Shift+9, so we can use Alt+8
+;; and Alt+9 to write { and }, or Alt+Shift+8 and Alt+Shift+9 to write
+;; [ and ].
+(define-key ergoemacs-keymap (kbd "M-8") "{")
+(define-key ergoemacs-keymap (kbd "M-9") "}")
+(define-key ergoemacs-keymap (kbd "M-(") "[")
+(define-key ergoemacs-keymap (kbd "M-)") "]")
+(define-key ergoemacs-keymap (kbd "M-,") "<")
+(define-key ergoemacs-keymap (kbd "M-.") ">")
+(define-key ergoemacs-keymap (kbd "M-:") "->") ; C++ arrow
+
 ;; Change isearch key to M-y/Y
 (define-key ergoemacs-keymap ergoemacs-isearch-forward-key nil)
 (define-key ergoemacs-keymap ergoemacs-isearch-backward-key nil)
