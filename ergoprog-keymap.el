@@ -34,6 +34,7 @@
 ;; Common commands
 (define-key ergoemacs-keymap (kbd "M-b") 'switch-to-buffer)
 (define-key ergoemacs-keymap (kbd "M-B") 'ibuffer)
+(define-key ergoemacs-keymap (kbd "M-M") 'execute-extended-command)
 (define-key ergoemacs-keymap (kbd "M-m s") 'save-buffer)
 (define-key ergoemacs-keymap (kbd "M-m M-s") 'save-some-buffers)
 (define-key ergoemacs-keymap (kbd "M-m f") 'find-file)
