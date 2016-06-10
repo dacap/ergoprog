@@ -53,11 +53,12 @@
 (define-key ergoemacs-keymap (kbd "M-m M-i") 'ergoprog-indent)
 
 ;; Macros
-(define-key ergoemacs-keymap (kbd "M-m k k") 'ergoprog-switch-macro-recording) ;; Start/end recording macro
-(define-key ergoemacs-keymap (kbd "M-m k e") 'kmacro-edit-macro)               ;; Edit macro
-(define-key ergoemacs-keymap (kbd "M-m k l") 'kmacro-end-and-call-macro)       ;; Run macro
-(define-key ergoemacs-keymap (kbd "M-m k i") 'kmacro-insert-counter)           ;; Insert counter
-(define-key ergoemacs-keymap (kbd "M-m k s") 'kmacro-set-counter)              ;; Set counter
+(define-key ergoemacs-keymap (kbd "M-m m") 'ergoprog-switch-macro-recording) ;; Start/end recording macro
+(define-key ergoemacs-keymap (kbd "M-m j") 'ergoprog-switch-macro-editing) ;; Edit macro
+(define-key ergoemacs-keymap (kbd "M-m l") 'kmacro-end-and-call-macro)       ;; Run macro
+
+(define-key ergoemacs-keymap (kbd "M-m I") 'kmacro-insert-counter)           ;; Insert counter
+(define-key ergoemacs-keymap (kbd "M-m S") 'kmacro-set-counter)              ;; Set counter
 
 ;; Registers (M-m r)
 (define-key ergoemacs-keymap (kbd "M-m r k") 'point-to-register) ;; k = Down = Point

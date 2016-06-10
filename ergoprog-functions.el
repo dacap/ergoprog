@@ -22,6 +22,12 @@
       (kmacro-start-macro 0)
     (kmacro-end-macro 1)))
 
+(defun ergoprog-switch-macro-editing ()
+  (interactive)
+  (if (eq major-mode 'edmacro-mode)
+      (edmacro-finish-edit)
+    (kmacro-edit-macro)))
+
 (defun ergoprog-indent ()
   (interactive)
   (if (or (eq major-mode 'list-mode)
