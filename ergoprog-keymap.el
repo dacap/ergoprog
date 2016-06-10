@@ -10,6 +10,7 @@
 (define-key ergoemacs-keymap (kbd "S-SPC") 'set-mark-command) ; Alternative to Alt+Space (when using Remote Desktop)
 (define-key ergoemacs-keymap (kbd "M-S-SPC") 'mark-sexp)
 (define-key ergoemacs-keymap (kbd "M-C-SPC") 'mark-paragraph)
+(define-key ergoemacs-keymap (kbd "M-m M-SPC") 'mark-paragraph)
 (define-key ergoemacs-keymap ergoemacs-move-beginning-of-line-key 'ergoprog-beginning-of-line-and-buffer)
 (define-key ergoemacs-keymap ergoemacs-move-end-of-line-key 'ergoprog-end-of-line-and-buffer)
 (define-key ergoemacs-keymap (kbd "M-S-<backspace>") 'backward-kill-sexp)
