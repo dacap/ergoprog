@@ -60,13 +60,15 @@
 (define-key ergoemacs-keymap (kbd "M-m I") 'kmacro-insert-counter)           ;; Insert counter
 (define-key ergoemacs-keymap (kbd "M-m S") 'kmacro-set-counter)              ;; Set counter
 
-;; Registers (M-m r)
-(define-key ergoemacs-keymap (kbd "M-m r k") 'point-to-register) ;; k = Down = Point
-(define-key ergoemacs-keymap (kbd "M-m r i") 'jump-to-register)  ;; i = Up = Jump
-(define-key ergoemacs-keymap (kbd "M-m r c") 'copy-to-register)  ;; c = Copy
-(define-key ergoemacs-keymap (kbd "M-m r v") 'insert-register)   ;; v = Paste
+;; Registers
+(define-key ergoemacs-keymap (kbd "M-m M-k") 'point-to-register) ;; k = Down = Point
+(define-key ergoemacs-keymap (kbd "M-m M-i") 'jump-to-register)  ;; i = Up = Jump
+(define-key ergoemacs-keymap (kbd "M-m M-c") 'copy-to-register)  ;; c = Copy
+(define-key ergoemacs-keymap (kbd "M-m M-v") 'insert-register)   ;; v = Paste
+(define-key ergoemacs-keymap (kbd "M-m M-b") 'list-registers)
 
-;; Bookmarks (M-m b)
-(define-key ergoemacs-keymap (kbd "M-m b k") 'bookmark-set)        ;; k = Down = Set
-(define-key ergoemacs-keymap (kbd "M-m b i") 'bookmark-jump)       ;; i = Up = Jump
-(define-key ergoemacs-keymap (kbd "M-m b b") 'bookmark-bmenu-list) ;; b = Switch Buffer = List Bookmarks
+;; Bookmarks
+(define-key ergoemacs-keymap (kbd "M-m k") 'bookmark-set)        ;; k = Down = Set
+(define-key ergoemacs-keymap (kbd "M-m i") 'bookmark-jump)       ;; i = Up = Jump
+(define-key ergoemacs-keymap (kbd "M-m b") 'bookmark-bmenu-list) ;; b = Switch Buffer = List Bookmarks
+
