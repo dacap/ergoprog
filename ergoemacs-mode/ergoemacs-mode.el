@@ -480,8 +480,8 @@ will change."
   (let ((modify-hook (if ergoemacs-mode 'add-hook 'remove-hook))
 	(modify-advice (if ergoemacs-mode 'ad-enable-advice 'ad-disable-advice)))
 
-    ;; Fix CUA
-    (if ergoemacs-mode
+    ;; Fix CUA (for Emacs 24.3)
+    (if (and ergoemacs-mode (version<= emacs-version "24.3"))
         (ergoemacs-fix-cua--pre-command-handler-1))
 
     ;; when ergoemacs-mode is on, activate hooks and unset global keys, else do inverse
