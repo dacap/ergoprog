@@ -1,0 +1,36 @@
+# ergoprog like readline shortcuts
+# Copyright (C) 2019 David Capello
+# https://davidcapello.com/programming/keyboard-layout/
+
+set editing-mode emacs
+
+"\e(": "["
+"\e)": "]"
+"\e8": "{"
+"\e9": "}"
+"\ej": backward-char
+"\el": forward-char
+"\ei": previous-history
+"\ek": next-history
+"\eJ": shell-backward-word
+"\eL": shell-forward-word
+"\eu": backward-word
+"\eo": forward-word
+"\eh": beginning-of-line
+"\eH": end-of-line
+"\eg": kill-line
+"\er": kill-word
+"\ee": backward-kill-word
+"\ed": backward-delete-char
+"\eD": shell-backward-kill-word
+"\ef": delete-char
+"\eF": shell-kill-word
+"\ez": undo
+"\en": kill-whole-line
+"\e ": set-mark
+"\ex": kill-region
+"\ec": copy-region-as-kill
+"\ev": yank
+"\ew": delete-horizontal-space
+"\emt": transpose-chars
+"\em\et": transpose-words
